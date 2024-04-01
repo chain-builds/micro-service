@@ -2,6 +2,7 @@
 
 name: Build Python Microservice
 on: 
+  workflow_call:
   push:
     branches-ignore:
       - main
