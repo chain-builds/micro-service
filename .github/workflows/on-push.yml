@@ -1,0 +1,16 @@
+name: Trigger workflow
+on:
+  push:
+    branches: [ main ]
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Triggering the workflow"
+      # - name: Trigger repository dispatch
+      #   uses: peter-evans/repository-dispatch@v2
+      #   with:
+      #       token: ${{ secrets.PAT }}
+      #       repository: chain-builds/builds
+      #       event-type: dependency_updated
+      #       client-payload: '{"triggered_by": "Microservice repo, on push event"}'

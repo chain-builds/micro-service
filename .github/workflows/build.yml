@@ -1,0 +1,13 @@
+# GitHub Action that is triggered on every push to the branch except for the main.
+
+name: Build Python Microservice
+on: 
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
