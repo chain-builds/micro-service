@@ -1,6 +1,6 @@
 # GitHub Action that is triggered on every push to the branch except for the main.
 
-name: Build Python Microservice
+name: 🏗️ Build Python Microservice
 on: 
   workflow_call:
   workflow_dispatch:
